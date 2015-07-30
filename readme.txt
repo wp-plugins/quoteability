@@ -4,7 +4,7 @@ Donate link: https://www.gittip.com/bmarshall511/
 Tags: quotes, blockquotes, drop quotes, dropquotes, shareable, social, twitter
 Requires at least: 3.0.0
 Tested up to: 4.2.3
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ A simple, light-weight WordPress plugin that allows you to easily add shareable 
 
 Use the following shortcode to include shareable quotes:
 
-    [quoteabilly]I love the Quoteability WordPress plugin! -Ben Marshall[/quoteabilly]
+    [quoteability]I love the Quoteability WordPress plugin! -Ben Marshall[/quoteability]
 
 Available options:
 
@@ -41,6 +41,9 @@ If you have suggestions for a new add-on, feel free to email me at me@benmarshal
 == Screenshots ==
 
 == Changelog ==
+
+= 1.0.2 =
+* Plugin name updates.
 
 = 1.0.1 =
 * Minor bug fixes.
