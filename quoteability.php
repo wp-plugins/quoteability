@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Quoteabilly
- * Plugin URI: https://benmarshall.me/quoteabilly
+ * Plugin Name: Quoteability
+ * Plugin URI: https://benmarshall.me/quoteability
  * Description: A simple, light-weight WordPress plugin that allows you to easily add shareable quotes via shortcodes.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Ben Marshall
  * Author URI: https://benmarshall.me
  * License: GPL2
@@ -31,27 +31,27 @@
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 // Define constants.
-if( ! defined( 'QUOTEABILLY_ROOT ' ) ) {
-  define( 'QUOTEABILLY_ROOT', plugin_dir_path( __FILE__ ) );
+if( ! defined( 'QUOTEABILITY_ROOT ' ) ) {
+  define( 'QUOTEABILITY_ROOT', plugin_dir_path( __FILE__ ) );
 }
 
-if( ! defined( 'QUOTEABILLY_PLUGIN ' ) ) {
-  define( 'QUOTEABILLY_PLUGIN', __FILE__ );
+if( ! defined( 'QUOTEABILITY_PLUGIN ' ) ) {
+  define( 'QUOTEABILITY_PLUGIN', __FILE__ );
 }
 
-spl_autoload_register( 'quoteabilly_autoloader' );
-function quoteabilly_autoloader( $class_name ) {
-  if ( false !== strpos( $class_name, 'Quoteabilly' ) ) {
-    $classes_dir = QUOTEABILLY_ROOT . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR;
+spl_autoload_register( 'quoteability_autoloader' );
+function quoteability_autoloader( $class_name ) {
+  if ( false !== strpos( $class_name, 'Quoteability' ) ) {
+    $classes_dir = QUOTEABILITY_ROOT . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR;
     $class_file = str_replace( '_', DIRECTORY_SEPARATOR, $class_name ) . '.php';
     require_once $classes_dir . $class_file;
   }
 }
 
 // Load the plugin features.
-$plugin               = new Quoteabilly_Plugin();
-$plugin['scripts']    = new Quoteabilly_Scripts();
-$plugin['shortcodes'] = new Quoteabilly_Shortcodes();
+$plugin               = new Quoteability_Plugin();
+$plugin['scripts']    = new Quoteability_Scripts();
+$plugin['shortcodes'] = new Quoteability_Shortcodes();
 
 // Initialize the plugin.
 $plugin->run();
