@@ -6,7 +6,7 @@ class Quoteabilly_Shortcodes {
 
   public function quoteabilly( $atts, $content = "" ) {
     $data = '';
-    if ( count( $atts )  > 0 ) {
+    if ( is_array( $atts ) && count( $atts )  > 0 ) {
       foreach( $atts as $key => $val ) {
         $data .= ' data-' . $key . '="' . $val . '"';
       }

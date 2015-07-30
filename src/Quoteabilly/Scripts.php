@@ -14,7 +14,7 @@ class Quoteabilly_Scripts {
   }
 
   public function register_styles() {
-    wp_register_style( 'quoteabilly', get_template_directory_uri() . '/css/quoteabilly.css' );
+    wp_register_style( 'quoteabilly', plugins_url( '/css/quoteabilly.css', QUOTEABILLY_PLUGIN ) );
   }
 
   public function register_scripts() {

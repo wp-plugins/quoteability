@@ -3,7 +3,7 @@
  * Plugin Name: Quoteabilly
  * Plugin URI: https://benmarshall.me/quoteabilly
  * Description: A simple, light-weight WordPress plugin that allows you to easily add shareable quotes via shortcodes.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Ben Marshall
  * Author URI: https://benmarshall.me
  * License: GPL2
