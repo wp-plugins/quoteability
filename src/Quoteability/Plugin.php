@@ -1,5 +1,5 @@
 <?php
-class Quoteabilly_Plugin implements ArrayAccess {
+class Quoteability_Plugin implements ArrayAccess {
   protected $contents;
 
   public function __construct() {
@@ -16,8 +16,8 @@ class Quoteabilly_Plugin implements ArrayAccess {
    * @link http://codex.wordpress.org/Plugin_API/Filter_Reference/preprocess_comment
    */
   public function plugin_row_meta( $links, $file ) {
-    if ( false !== strpos( $file, 'quoteabilly.php' ) ) {
-      $links = array_merge( $links, array( '<a href="https://benmarshall.me/quoteabilly/">Documentation</a>' ) );
+    if ( false !== strpos( $file, 'quoteability.php' ) ) {
+      $links = array_merge( $links, array( '<a href="https://benmarshall.me/quoteability/">Documentation</a>' ) );
       $links = array_merge( $links, array( '<a href="https://www.gittip.com/bmarshall511/">Donate</a>' ) );
     }
     return $links;
